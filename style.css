@@ -1,0 +1,654 @@
+body {
+    background: #fff;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+
+  
+  a:hover,
+  a:active,
+  a:focus {
+    color: #E44335;
+    outline: none;
+    text-decoration: none;
+  }
+  
+  
+  /* Back to top button */
+  .back-to-top {
+    position: fixed;
+    display: none;
+    background: #50d8af;
+    color: #fff;
+    padding: 6px 12px 9px 12px;
+    font-size: 16px;
+    border-radius: 2px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+  }
+  
+  .back-to-top:focus {
+    background: #50d8af;
+    color: #fff;
+    outline: none;
+  }
+  
+  .back-to-top:hover {
+    background: #0c2e8a;
+    color: #fff;
+  }
+  
+  /*--------------------------------------------------------------
+  # Top Bar
+  --------------------------------------------------------------*/
+  
+  #topbar {
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+  }
+  
+  #topbar .contact-info a {
+    line-height: 1;
+    color: #555;
+  }
+  
+  #topbar .contact-info a:hover {
+    color: #E44335;
+  }
+  
+  #topbar .contact-info i {
+    color: #000000;
+    padding: 4px;
+  }
+  
+  #topbar .contact-info .fa-phone {
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px solid #e9e9e9;
+  }
+  
+  #topbar .social-links a {
+    color: #555;
+    padding: 4px 12px;
+    display: inline-block;
+    line-height: 1px;
+    border-left: 1px solid #e9e9e9;
+  }
+  
+  #topbar .social-links a:hover {
+    color: #E44335;
+  }
+  
+  #topbar .social-links a:first-child {
+    border-left: 0;
+  }
+
+  /* Navgition bar*/
+
+  .navbar
+  {
+      background-color: #fff !important;
+      padding: 30px;
+  }
+  .navbar-brand
+  {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+  }
+  .nav-item a {
+    padding: 10px 8px;
+    text-decoration: none;
+    display: inline-block;
+    color: #555;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    outline: none;
+  }
+  
+ .active {
+     color: #E44335 !important;
+ }
+ .nav-item a:hover
+ {
+  color:#E44335; 
+ }
+ 
+  
+ .navbar-nav li {
+    margin-left: 10px;
+  }
+  .navbar-nav ul {
+    margin: 4px 0 0 0;
+    padding: 10px;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    background: #fff;
+  }
+  .navbar-nav ul li a {
+    padding: 10px;
+    color: #333;
+    transition: 0.3s;
+    display: block;
+    font-size: 13px;
+    text-transform: none;
+  }
+
+.sticky-top
+{
+  position: sticky;
+}
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+#intro {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: url("../intro-carousel/1.jpg") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 40px 0;
+  }
+  
+  #intro .intro-content {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #intro .intro-content h2 {
+    color: #174EA6;
+    margin-bottom: 30px;
+    font-size: 64px;
+    font-weight: 700;
+  }
+  #intro .intro-content h2:hover {
+    color: #000000;
+  }
+  
+  #intro .intro-content h2 span {
+    color: #E44335;
+    display: none;
+  }
+ 
+  
+  #intro .intro-content .btn-get-started,
+  #intro .intro-content .btn-projects {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+    color: #fff;
+  }
+  
+  #intro .intro-content .btn-get-started {
+    background: #E44335;
+    border: 2px solid #E44335;
+  }
+  
+  #intro .intro-content .btn-get-started:hover {
+    background: none;
+    color:#E44335;
+  }
+  
+  #intro .intro-content .btn-projects {
+    background:#174EA6;
+    border: 2px solid #174EA6;
+  }
+  
+  #intro .intro-content .btn-projects:hover {
+    background: none;
+    color: #174EA6;
+  }
+  
+  #intro #intro-carousel {
+    z-index: 8;
+  }
+  
+  #intro #intro-carousel::before {
+    content: '';
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 7;
+  }
+  
+  #intro #intro-carousel .item {
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-property: opacity;
+  }
+  
+
+/*About us - section */
+
+#about
+{
+  padding-top: 5px;
+}
+.about-area {
+  background-color: #fff;
+}
+
+.single-well>a {
+  display: block;
+}
+
+.single-well ul li {
+  color: #444;
+  display: block;
+  padding: 5px 0;
+}
+
+.single-well ul li i {
+  color: #fe780b;
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+.single-well p {
+  color: #444;
+  padding-top: 40px;
+}
+
+
+
+
+
+/* Services Section
+--------------------------------*/
+.sectiontitle
+{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: #E44335;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+
+#services {
+  padding: 60px 0 40px 0;
+  margin-top: 30px;
+}
+
+#services .box  {
+  padding: 30px;
+  margin-top: 20px;
+  padding-top: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#services .box:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#services .icon {
+  margin: 0 auto 15px auto;
+  padding-top: 12px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+#services .icon i {
+  font-size: 36px;
+  line-height: 1;
+}
+
+#services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#services .title a {
+  color: #111;
+}
+
+#services .box:hover .title a {
+  color: #E44335;
+}
+
+#services .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+
+/* Project Section
+--------------------------------*/
+
+.project-text h1{
+font-size: 20px;
+font-weight: 600;
+padding-top: 20px;
+
+}
+.project-text p{
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 20px;
+  }
+
+.project-work{
+  padding:30px 0;
+}
+
+.counter
+{
+  font-size: 25px;
+  font-weight: 600;
+  color: #000;
+}
+
+
+/*-----------------------------------------
+
+Why us secation Starts 
+
+-------------------------------------------*/
+.whyus{
+  padding: 30px 0;
+}
+.whyus:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-radius: 10px;
+  transition:all 0.3s ease-in-out ;
+  transform: translateY(-25px);
+}
+
+.whyus h4{
+  text-align: center !important;
+  font-weight: 500;
+  color: #000;
+}
+.whyus:hover h4{
+  color: #E44335;
+  font-weight: 600;
+}
+.whyus p{
+  text-align: center !important;
+  padding: 5px 15px;
+  color: #000;
+}
+.whyus-img{
+padding:30px 0;
+}
+
+/*------------------------------------
+
+Our Visions start
+
+-------------------------------------*/
+
+.title-service .title-ourvision{
+padding-top: 30px;}
+
+.tab-content h3 {
+color: #000 !important;
+padding: 10px 0;
+}
+.tab-content p{
+  color: #000 !important;
+  padding-bottom: 50px;
+}
+.tab-content li{
+padding: 5px 5px;
+}
+
+/*----------------------------------------
+
+Welcome TO Grossify
+
+------------------------------------------*/
+
+.welcomegrossify{
+  background-image: url('https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&auto=format&fit=crop&w=428&h=214&q=60');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  height: 300px;
+  opacity: 2;
+}
+
+.welcometext h3{
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 70px;
+  color: white;
+}
+
+.welcometext p{
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+/*----------------------------------------
+
+Footer section STarts 
+
+------------------------------------------*/
+
+#footer-bottom {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 30px 0;
+  margin-top: 20px;
+}
+
+#footer-copyrights p {
+  margin: 0;
+  color: white;
+}
+
+#footer-menu {
+  float: left !important;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+#footer-menu ul {
+  list-style: none !important;
+  padding-left: 0;
+  margin: 0;
+}
+
+#footer-menu ul li {
+  display: inline-block;
+}
+
+#footer-menu a {
+  color: white;
+  font-synthesis: 14px;
+  font-weight: 300;
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: Arial;
+  transition: 0.6s;
+}
+
+#footer-menu a:hover {
+  color: #e95420 !important;
+}
+.img {
+  width: 280px;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  height: auto;
+}
+
+/*-----------------------------------
+
+Our team Section starts
+
+-------------------------------------*/
+
+
+#team{
+
+  height: 100vh;
+  width: 100%;
+  padding: 80px 5px;
+}
+
+
+.carousel-indicators{
+  position: absolute;
+  right: 0;
+  bottom: -60px !important;
+}
+.carousel-indicators li{
+  background-color: #e95420 !important;
+}
+
+
+.member img {
+  width: 100%;
+  height: 250px;
+}
+
+
+
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#team .member .member-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+  padding: 15px 0;
+  background: rgba(29, 28, 41, 0.6);
+}
+
+#team .member .member-info-content {
+  transition: margin 0.2s;
+  height: 40px;
+  transition: height 0.4s;
+}
+
+#team .member:hover .member-info {
+  transition: 0.4s;
+}
+
+#team .member:hover .member-info-content {
+  height: 80px;
+}
+
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+#team .member .social {
+  margin-top: 15px;
+}
+
+#team .member .social a {
+  transition: none;
+  color: #fff;
+}
+
+#team .member .social a:hover {
+  color: #e95420;
+}
+
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+@media(max-width: 768px){
+  .team ,.footer {
+    height: auto;
+  }
+  .single-img{
+    width: 80%;
+    height: auto;
+  }
+  .about-p p{
+    width: auto;
+    height: auto;
+    font-size: 5px!important;
+  }
+}
